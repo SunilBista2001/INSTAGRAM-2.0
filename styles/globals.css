@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+@layer components {
+  .navBtn {
+    @apply hidden md:inline-flex cursor-pointer w-5 hover:scale-125 transition-all duration-150 ease-out;
+  }
+  .story {
+    @apply hover:scale-110 transition-all duration-150 ease-in;
+  }
+  .btn {
+    @apply h-7 hover:scale-125 transition-all duration-150 ease-out cursor-pointer;
+  }
+}
